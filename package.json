@@ -1,0 +1,19 @@
+{
+    "name": "banner-statistics",
+    "version": "1.0.0",
+    "description": "Rewritten by picturee",
+    "main": "dist/main.js",
+    "scripts": {
+        "build": "tsc --build",
+        "start": "node dist/main.js"
+    },
+    "author": "picturee",
+    "lisense": "ISC",
+    "dependencies": {
+        "canvas": "^2.11.2",
+        "discord.js": "^14.14.1",
+        "luxon": "^3.4.4",
+        "node-fetch": "^3.3.2",
+        "typescript": "^5.4.2"
+    }
+}

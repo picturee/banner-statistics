@@ -1,0 +1,36 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ESNext",
+        "module": "CommonJS",
+        "moduleResolution": "Node",
+
+        // # 
+        "esModuleInterop": true, // # Создать хелперы __importStar и __importDefault
+        "allowSyntheticDefaultImports": true, // Разрешить импортировать модули не имеющие внутри себя "import default"?
+        "resolveJsonModule": true, // Разрешить использовать JSON файлы  ?
+        "importHelpers": true, // # Вспомогательн
+
+        // # 
+        "strict": true, // # Включить ли все строги проверки типов сразу: noImplicitAny, noImplicitThis, alwaysStrict, strictNullChecks, strictFunctionTypes, strictPropertyInitialization?
+        "allowJs": true, // # Разрешать компилировать файлы с JavaScript-кодом?
+        "checkJs": true, // # Сообщить об ошибках в .js-файлах? Используйте совместно с "allowJs".
+
+        // # 
+        "noEmitOnError": true, // Не создавать итоговый файл, если во время компиляции произошла ошибка. 
+        "pretty": true, // Окрашивать в терминале сообщения об ошибках.
+        "removeComments": true, // Удалить все комментарии из итогового файла.
+        "noUnusedParameters": true, // Показывать ошибку, если где-то найдены неиспользуемые параметры.   
+        "allowUnreachableCode": true, // Сообщить об ошибке в случае обнаружения кода, который никогда не будет выполнен?
+        "forceConsistentCasingInFileNames": true, // Запретить несогласованные ссылки на один и тот же файл?
+        "noFallthroughCasesInSwitch": true, // Сообщить об ошибке в случае обнаружения проваливания в конструкции switch-case?
+        "skipLibCheck": false, // Не проверять типы, заданные во всех файлах описания типов (*.d.ts)?
+    
+        "baseUrl": "src", 
+        "rootDir": "./src", // Путь до папки с которой надо начинать поиск входных файлов. 
+        "outDir": "./dist", // Поместить все скомпилированные файлы в данную папку, согласно их вложенности в исходниках.
+    },
+    "include": ["src/**/*", "environment.d.ts"],
+    "exclude": ["dist", "node_modules"]
+}
